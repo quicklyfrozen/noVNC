@@ -1,5 +1,11 @@
 /*
- * Socket interface based on socket.io.  
+ * Socket interface based on socket.io.  This allows reasonably
+ * efficient communication in places where a browser WebSocket won't
+ * work as it supports Flash, long polling, etc.  Requires proxy
+ * server running on node.js to complete connection.
+ *
+ * (c) 2012 Michael Tinglof, Joe Balaz, Les Piech (Mercuri.ca)
+ * Licensed under LGPL-3 (see LICENSE.txt)
  */
 
 /*jslint browser: true, bitwise: false, plusplus: false */
